@@ -1,4 +1,4 @@
-Doom Squad Basketball
+![image](https://github.com/DrSLMac/doom_squad/assets/102887963/c2ca7a55-60f9-4079-a9b5-6dd993640d6a)
 
 ## Table of Contents 📖
 - [Introduction](#introduction)
