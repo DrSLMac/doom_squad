@@ -11,9 +11,10 @@ import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema'
 
 export default defineConfig({
-  basePath: '/admin',
   projectId,
   dataset,
+  title: 'Doom Squad Studio',
+  basePath: '/admin',
   // Add and edit the content schema in the './sanity/schema' folder
   schema,
   plugins: [
