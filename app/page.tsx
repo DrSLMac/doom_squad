@@ -2,14 +2,14 @@
 
 import { Fragment } from "react"
 import Header from "./components/Header"
-import MobileMenu from "./components/MobileMenu"
+import HomePage from "./components/HomePage"
 
 export default function Home() {
 
   return (
       <Fragment>
         <Header />
-        {/* <MobileMenu/> */}
+        <HomePage />
         {/* block page */}
 
         {/* contact page */}
