@@ -30,6 +30,7 @@ const NavBar = () => {
   return (
     <div className='hidden sm:flex justify-center 
         text-white text-xl space-x-1 font-medium pt-6
+        lg:text-2xl
     '>
             <div>
                 <button
