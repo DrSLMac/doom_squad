@@ -4,6 +4,7 @@ import ballOnFire from '../../public/ball-on-fire.png'
 import { motion } from 'framer-motion'
 import { SocialIcon } from 'react-social-icons'
 import MobileMenu from './MobileMenu'
+import NavBar from './NavBar'
 
 const Header = () => {
   return (
@@ -36,11 +37,11 @@ const Header = () => {
                 initial={{
                     x: 500,
                     opacity: 0,
-                    scale: 0.2,
+                    scale: 0.1,
                 }}
-                animate={{ x: 0, opacity: 1, scale: 1.1 }}
+                animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
-                className='flex items-start'
+                className='flex items-center'
             >
                 <SocialIcon 
                     url="https://www.facebook.com/texasdivasbasketball" 
@@ -69,6 +70,7 @@ const Header = () => {
         <div>
             <MobileMenu />
         </div>
+        <NavBar />
     </header>
   )
 }
