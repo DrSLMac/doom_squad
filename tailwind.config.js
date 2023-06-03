@@ -10,16 +10,17 @@ module.exports = {
   },
   theme: {
     extend: {
+      backgroundImage: {
+        'site-gradient': 'linear-gradient(000000, #7ED957)'
+      },
       screens: {
         'xxs': '400px',
-        'xs': '450px',
+        'xs': '475px',
         'minism': '575px',
         'midmd': '896px',
       },
       colors: {
-        'deep-red': '#470A11',
-        'navy-blue': '#101F3E',
-        'light-red': '#F0949F'
+        'neon': '#7ED957',
       },
       boxShadow: {
         '4xl': 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'

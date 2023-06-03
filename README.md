@@ -25,6 +25,8 @@
 - ![GitHub Issues](https://img.shields.io/badge/GitHub%20Projects-%F0%9F%92%BB-lightgrey)
 - ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
 - ![Vercel](https://user-images.githubusercontent.com/101746747/188785090-4abee495-4f46-4dba-b554-e16ded576297.png)
+- Framer Motion
+- Social Icons
 
 
 
