@@ -2,15 +2,14 @@
 
 import { Fragment } from "react"
 import Header from "./components/Header"
-
-
+import MobileMenu from "./components/MobileMenu"
 
 export default function Home() {
 
   return (
       <Fragment>
-      <h1 className="text-white"></h1>
-      <Header />
+        <Header />
+        {/* <MobileMenu/> */}
         {/* block page */}
 
         {/* contact page */}
