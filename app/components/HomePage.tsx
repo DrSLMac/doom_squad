@@ -27,7 +27,7 @@ const HomePage = () => {
         <Image 
           src={doomLogo} 
           alt="Doom Squad Team Logo" 
-          className="h-52 w-auto"
+          className="h-48 w-auto"
           priority
         />
       </motion.div>
