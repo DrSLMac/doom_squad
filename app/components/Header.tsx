@@ -67,7 +67,7 @@ const Header = () => {
                 />
             </motion.div>
         </div>
-        <div>
+        <div className='z-50'>
             <MobileMenu />
         </div>
         <NavBar />

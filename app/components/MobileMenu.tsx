@@ -14,10 +14,10 @@ const MobileMenu = () => {
   return (
     <>
         <div className='flex h-full w-full justify-end
-        pr-6
-        xxs:pr-8
-        xs:pr-10
-        minism:pr-12
+        pr-8
+        xxs:pr-10
+        xs:pr-12
+        minism:pr-14
         sm:hidden'>
             <div onClick={handleNav} className='cursor-pointer'>
                 <AiOutlineMenu size={35} color='white'/>

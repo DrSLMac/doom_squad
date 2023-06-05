@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const HomePage = () => {
   return (
-    <section>
+    <section className="-z-50">
       <motion.div 
         initial={{
           x:0,
@@ -22,12 +22,12 @@ const HomePage = () => {
           stiffness: 200,
           duration: 1.5
         }}
-        className="flex justify-center mt-20
+        className="flex justify-center mt-20 
       ">
         <Image 
           src={doomLogo} 
           alt="Doom Squad Team Logo" 
-          className="h-48 w-auto"
+          className="h-48 w-auto -z-40"
           priority
         />
       </motion.div>
