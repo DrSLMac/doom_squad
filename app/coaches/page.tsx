@@ -1,9 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const Coaches = () => {
   return (
-    <div>page</div>
+    <div className='p-12'>
+        <h1 className='text-white'>This is the Coaches Page</h1>
+    </div>
   )
 }
 
-export default page
+export default Coaches

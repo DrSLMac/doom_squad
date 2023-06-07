@@ -46,7 +46,8 @@ const HomePage = ({ carouselPics }: Props) => {
           <Image
             src={doomLogo}
             alt="Doom Squad Team Logo"
-            className="2xl:h-[20rem] w-auto"
+            width={900}
+            // className="w-[152vw]"
             priority
           />
         </motion.div>
