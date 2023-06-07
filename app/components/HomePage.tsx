@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import doomLogo from "../../public/doom-logo.png";
 import Image from "next/image";
+import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
 import Carousel from "./Carousel";
 import { CarouselPics } from "@/types/CarouselPics";
@@ -15,8 +16,11 @@ const OPTIONS: EmblaOptionsType = {};
 
 const HomePage = ({ carouselPics }: Props) => {
   return (
-    <section>
-      <div className="flex justify-around">
+    <section className="relative">
+      <div className="relative z-99">
+        <MobileMenu />
+      </div>
+      <div className="relative flex justify-around -z-10">
         <div className="embla w-[35%]">
           <Carousel carouselPics={carouselPics} options={OPTIONS} />
         </div>
@@ -42,7 +46,7 @@ const HomePage = ({ carouselPics }: Props) => {
           <Image
             src={doomLogo}
             alt="Doom Squad Team Logo"
-            className="h-[20rem] w-auto -z-40"
+            className="2xl:h-[20rem] w-auto"
             priority
           />
         </motion.div>

@@ -11,15 +11,15 @@ export default function Home() {
 
   useEffect(() => {
     getCarouselPics().then(pics => {
-      // console.log("pics: ", pics)
       setCarouselPics(pics)
     })
   }, [])
-// console.log("carouselPicArr: ", carouselPicArr)
   return (
       <Fragment>
-        <Header />
-        <HomePage carouselPics={carouselPicArr}/>
+        <section className="'snap-start">
+          <Header />
+          <HomePage carouselPics={carouselPicArr}/>
+        </section>
         {/* block page */}
 
         {/* contact page */}
