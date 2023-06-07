@@ -28,6 +28,9 @@ module.exports = {
       spacing: {
         '1/2': '50%',
         "300px": "300px",
+      },
+      margin: {
+        'margLeft': 'calc((12rem) * -1)'
       }
     },
   },
