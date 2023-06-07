@@ -17,10 +17,10 @@ const OPTIONS: EmblaOptionsType = {};
 const HomePage = ({ carouselPics }: Props) => {
   return (
     <section className="relative">
-      <div className="relative z-99">
+      <div className="relative z-99 mt-6">
         <MobileMenu />
       </div>
-      <div className="relative flex justify-around -z-10">
+      <div className="relative flex justify-around items-center -z-10">
         <div className="embla w-[35%]">
           <Carousel carouselPics={carouselPics} options={OPTIONS} />
         </div>
@@ -41,13 +41,17 @@ const HomePage = ({ carouselPics }: Props) => {
             stiffness: 200,
             duration: 1.5,
           }}
-          className="flex mt-20 px-2"
+          className="border border-slate-600 rounded-lg shadow-4xl 
+            mt-48 p-2
+            sm:mt-40 sm:p-4
+            midmd:-mt-48 midmd:p-1
+            xl:py-4 xl:px-2 2xl:px-2"
         >
           <Image
             src={doomLogo}
             alt="Doom Squad Team Logo"
-            width={900}
-            // className="w-[152vw]"
+            width={2000}
+            // className="md:w-auto md:h-[10]"
             priority
           />
         </motion.div>

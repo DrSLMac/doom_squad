@@ -23,7 +23,7 @@ const Carousel = ({ carouselPics, options }: Props) => {
   return (
     <>
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="hidden md:flex embla__container">
+        <div className="hidden midmd:flex embla__container">
 
           {carouselPics
             ? carouselPics.map((pic) => {
@@ -35,7 +35,7 @@ const Carousel = ({ carouselPics, options }: Props) => {
                       alt={alt}
                       height={250}
                       width={300}
-                      className="embla__slide__img rounded-md border border-white shadow-4xl"
+                      className="embla__slide__img rounded-md border border-slate-600 shadow-4xl"
                       priority
                     />
                   </div>
