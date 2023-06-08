@@ -25,6 +25,10 @@ module.exports = {
       boxShadow: {
         '4xl': 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'
       },
+      dropShadow: {
+        '3xl': '10px 10px 8px #595959',
+        'grey': '10px 10px 8px #A6A6A6',
+      },
       spacing: {
         '1/2': '50%',
         "300px": "300px",

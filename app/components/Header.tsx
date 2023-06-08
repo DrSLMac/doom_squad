@@ -26,7 +26,12 @@ const Header = () => {
             scale: 0.2,
           }}
           animate={{ x: 0, opacity: 1, scale: 1.1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ 
+            type: 'spring',
+            stiffness: 50,
+            duration: 1.7 
+          }}
+          className="drop-shadow-3xl"
         >
           <Image
             src={ballOnFire}
@@ -68,7 +73,7 @@ const Header = () => {
           />
         </motion.div>
       </div>
-      {/* <MobileMenu /> */}
+      <MobileMenu />
       <NavBar />
     </header>
   );
