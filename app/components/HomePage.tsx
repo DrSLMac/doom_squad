@@ -90,9 +90,9 @@ const HomePage = ({ carouselPics }: Props) => {
         <h1>Welcome to the 
           <br className="sm:hidden"></br><span className={rubikWet.className}> Doom Sqad!</span>
         </h1>
-        <p>We are an elite basketball 
+        <p>We are an elite basketball<span> </span>
         <br className="lg:hidden"></br>
-          program serving the 
+           program serving the 
         <br></br>  
           Dallas/Fort Worth metroplex.</p>
       </motion.div>
