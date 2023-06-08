@@ -44,7 +44,9 @@ const HomePage = ({ carouselPics }: Props) => {
             duration: 1.5,
           }}
           className="flex items-center rounded-lg drop-shadow-3xl
-            my-24 px-10 p-4
+            my-24 px-10 py-4
+            xs:my-28 xs:px-12
+            minism:px-16 minism:py-10
             sm:p-4
             md:my-32
             lg:my-28
@@ -63,14 +65,37 @@ const HomePage = ({ carouselPics }: Props) => {
           <Carousel carouselPics={carouselPics} options={OPTIONS} />
         </div> */}
       </div>
-      <div className="-mt-8 font-semibold text-center drop-shadow-grey
+      <motion.div 
+        initial={{
+          x: 0,
+          opacity: 0,
+          scale: 0.2,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1.1,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          duration: 1.5,
+        }}
+        className="-mt-8 font-semibold text-center drop-shadow-grey
         p-2 text-2xl
-      ">
+        sm:text-3xl sm:-mt-6
+        md:-mt-2
+        lg:space-y-2 lg:text-4xl"
+      >
         <h1>Welcome to the 
-          <br></br><span className={rubikWet.className}> Doom Sqad!</span>
+          <br className="sm:hidden"></br><span className={rubikWet.className}> Doom Sqad!</span>
         </h1>
-        <p>We are an elite basketball program serving the Dallas/Fort Worth metroplex.</p>
-      </div>
+        <p>We are an elite basketball 
+        <br className="lg:hidden"></br>
+          program serving the 
+        <br></br>  
+          Dallas/Fort Worth metroplex.</p>
+      </motion.div>
     </section>
   );
 };
