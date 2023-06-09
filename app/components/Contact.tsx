@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col text-center">
+    <div className="h-screen flex flex-col justify-between text-center">
       <div className="text-white flex items-center justify-between px-6 pt-6
             xxs:px-8
             xs:px-10
@@ -49,7 +49,7 @@ const Contact = () => {
                 sm:space-y-10 sm:py-8
                 md:py-10
                 lg:space-y-12 */}
-      <div className="flex flex-col items-center py-12 space-y-4">
+      <div className="flex flex-col items-center space-y-4 -mt-20">
         <h4 className="contactText">
           Want to know more? 
         <br></br>
