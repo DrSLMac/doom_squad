@@ -141,7 +141,7 @@ const Contact = () => {
         </form>
       </div>
       <div className='flex justify-center'>
-        <footer className='fixed bottom-0'>
+        <footer className='relative bottom-0'>
           <SocialIcons />
         </footer>
       </div>

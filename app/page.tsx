@@ -19,7 +19,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
+    <div className="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
 
       <Head>
         <title>Doom Squad Basketball</title>
