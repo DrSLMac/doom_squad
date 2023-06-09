@@ -1,9 +1,12 @@
 'use client'
-import { Fragment, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Header from "./components/Header"
 import HomePage from "./components/HomePage"
 import { CarouselPics } from "@/types/CarouselPics"
 import { getCarouselPics } from "@/sanity/sanity-utils"
+import PageBlocks from "./components/PageBlocks"
+import Contact from "./components/Contact"
+import Head from "next/head"
 
 
 export default function Home() {
@@ -14,15 +17,32 @@ export default function Home() {
       setCarouselPics(pics)
     })
   }, [])
-  return (
-      <Fragment>
-        <section className="'snap-start">
-          <Header />
-          <HomePage carouselPics={carouselPicArr}/>
-        </section>
-        {/* block page */}
 
-        {/* contact page */}
-      </Fragment>
-    )
+  return (
+    <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
+
+      <Head>
+        <title>Doom Squad Basketball</title>
+        <meta name="description" content="Doom Squad Basketball" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <header id='/' className='snap-start'>
+        <Header />
+      </header>
+
+      <section>
+        <HomePage carouselPics={carouselPicArr}/>
+      </section>
+
+      <section id='about' className='snap-center'>
+        <PageBlocks />
+      </section>
+
+      <section id='contact' className='snap-start'>
+        <Contact />
+      </section>
+    </div>  
+  )
 }

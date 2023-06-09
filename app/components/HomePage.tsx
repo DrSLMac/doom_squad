@@ -21,7 +21,7 @@ const OPTIONS: EmblaOptionsType = {};
 
 const HomePage = ({ carouselPics }: Props) => {
   return (
-    <section className="">
+    <section id="/" className="h-screen">
       <div className="relative flex justify-around items-center -z-20">
         {/* <div className="embla w-[35%]">
           <Carousel carouselPics={carouselPics} options={OPTIONS} />
@@ -81,14 +81,14 @@ const HomePage = ({ carouselPics }: Props) => {
           stiffness: 200,
           duration: 1.5,
         }}
-        className="-mt-8 font-semibold text-center drop-shadow-grey
+        className="relative -mt-8 font-semibold text-center drop-shadow-grey -z-30
         p-2 text-2xl
         sm:text-3xl sm:-mt-6
         md:-mt-2
         lg:space-y-2 lg:text-4xl"
       >
         <h1>Welcome to the 
-          <br className="sm:hidden"></br><span className={rubikWet.className}> Doom Sqad!</span>
+          <br className="sm:hidden"></br><span className={rubikWet.className}> Doom Squad!</span>
         </h1>
         <p>We are an elite basketball<span> </span>
         <br className="lg:hidden"></br>

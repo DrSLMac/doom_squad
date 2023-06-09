@@ -12,7 +12,7 @@ const MobileMenu = () => {
     }
 
   return (
-    <div>
+    <div className='relative z-50'>
         <div className='flex h-full w-full justify-end
         pr-8
         xxs:pr-10
