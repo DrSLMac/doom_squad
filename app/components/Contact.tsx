@@ -91,7 +91,7 @@ const Contact = () => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col
-                        text-sm space-y-3 w-[300px] shadow-xl
+                        text-sm space-y-2 w-[300px] shadow-xl
                         sm:w-[375px]
                         md:w-[450px]
                         lg:w-[600px] lg:text-base
