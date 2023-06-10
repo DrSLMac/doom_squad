@@ -30,8 +30,10 @@ const Contact = () => {
 
   return (
     <div className="h-screen flex flex-col justify-between text-center">
-      <div className="text-white flex items-center justify-between px-6 pt-6
-            xxs:px-8
+
+
+      <div className="text-white flex items-center justify-between 
+            px-8 pt-8
             xs:px-10
             minism:px-12
             sm:px-16
@@ -41,7 +43,7 @@ const Contact = () => {
         <BallIcon />
         {/* <SocialIcons /> */}
         <a href="/">
-          <HomeIcon className="text-white h-10"/>
+          <HomeIcon className="text-white short:h-8 h-10"/>
         </a>
       </div>
       {/* space-y-10 py-6
@@ -49,14 +51,16 @@ const Contact = () => {
                 sm:space-y-10 sm:py-8
                 md:py-10
                 lg:space-y-12 */}
-      <div className="flex flex-col items-center space-y-4 -mt-20">
+      <div className="flex flex-col items-center 
+      short:-mt-8 -mt-20 space-y-2"
+      >
         <h4 className="contactText">
           Want to know more? 
         <br></br>
           Looking for ways to get involved? 
         </h4>
         <div className={inspiration.className}>
-          <span className="text-6xl lg:text-7xl">Get in touch!</span>
+          <span className="short:text-4xl text-6xl lg:text-7xl">Get in touch!</span>
         </div>
 
         <div
@@ -67,23 +71,25 @@ const Contact = () => {
                     lg:text-2xl
                 "
         >
-          <div className="relative z-0 flex items-center space-x-2 md:space-x-5  justify-center">
-            <PhoneIcon className="text-navy-blue h-5 md:h-7 md:w-7 animate-pulse" />
+          <div className="relative z-0 flex items-center short:text-sm space-x-2 md:space-x-5  justify-center">
+            <PhoneIcon className="short:h-4 h-5 md:h-7 md:w-7 animate-pulse" />
             <p>+1 (817) 896-2073</p>
           </div>
 
-          <div
-            className="flex items-center justify-center
-                        space-x-1
-                        md:space-x-5
-                    "
-          >
-            <EnvelopeIcon className="text-navy-blue h-5 md:h-7 md:w-7 animate-pulse" />
+          <div className="flex items-center justify-center
+                      short:text-sm
+                      space-x-2
+                      md:space-x-5
+          ">
+            <EnvelopeIcon className="short:h-4 h-5 md:h-7 md:w-7 animate-pulse" />
             <p>support@txdoomsquad.com</p>
           </div>
 
-          <div className="flex items-center md:space-x-5 space-x-1 justify-center">
-            <MapPinIcon className="text-navy-blue h-7 w-7 animate-pulse" />
+          <div className="flex items-center justify-center
+                      short:text-sm
+                      space-x-2
+                      md:space-x-5">
+            <MapPinIcon className="short:h-4 h-7 w-7 animate-pulse" />
             <p>Fort Worth, TX</p>
           </div>
         </div>
@@ -92,6 +98,7 @@ const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col
                         text-sm space-y-2 w-[300px] shadow-xl
+                        short:w-[275px]
                         sm:w-[375px]
                         md:w-[450px]
                         lg:w-[600px] lg:text-base
@@ -133,7 +140,7 @@ const Contact = () => {
             // onClick={() => reset()}
             className="pageButtons justify-center bg-gray-900 text-neon
               font-bold uppercase
-              text-lg tracking-[4px] py-3 px-4
+              text-lg tracking-[4px] short:py-2 py-3 px-4
               lg:text-2xl lg:tracking-[10px] lg:py-5"
           >
             Submit
@@ -141,7 +148,7 @@ const Contact = () => {
         </form>
       </div>
       <div className='flex justify-center'>
-        <footer className='relative bottom-0'>
+        <footer className='relative bottom-3'>
           <SocialIcons />
         </footer>
       </div>

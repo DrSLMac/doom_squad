@@ -22,7 +22,7 @@ const BallIcon = () => {
     <Image
       src={ballOnFire}
       alt="graphic of basketball with flames"
-      className="h-16 w-auto md:h-20 lg:h-24"
+      className="short:h-12 h-16 w-auto md:h-20 lg:h-24"
       priority
     />
   </motion.div>

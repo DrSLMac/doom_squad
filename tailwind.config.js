@@ -18,6 +18,8 @@ module.exports = {
         'xs': '475px',
         'minism': '575px',
         'midmd': '896px',
+        'short': { 'raw': '(max-height: 750px)'},
+        // 'tall': { 'raw': '(min-height: 800px)' },
       },
       colors: {
         'neon': '#7ED957',

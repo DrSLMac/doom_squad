@@ -71,11 +71,16 @@ body {
 }
 
 .contactInput {
-  @apply outline-none cursor-pointer bg-slate-100/80 rounded-md shadow-4xl px-6 py-3 border-b-4 border-gray-900/40 text-gray-950 placeholder-gray-500 transition-all focus:border-gray-900/70 focus:text-gray-950 hover:border-gray-900
+  @apply outline-none cursor-pointer bg-slate-100/80 rounded-md shadow-4xl 
+  short:py-2 px-6 py-3 
+  border-b-4 border-gray-900/40 
+  text-gray-950 placeholder-gray-500 
+  transition-all focus:border-gray-900/70 focus:text-gray-950 hover:border-gray-900
 }
 
 .contactText {
-  @apply font-semibold text-center text-xl
+  @apply font-semibold text-center 
+  short:text-base
   xs:text-2xl
   md:text-3xl
   lg:text-4xl lg:space-y-6
