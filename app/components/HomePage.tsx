@@ -44,7 +44,8 @@ const HomePage = ({ carouselPics }: Props) => {
             duration: 1.5,
           }}
           className="flex items-center rounded-lg drop-shadow-3xl
-            my-24 px-10 py-4
+            short:my-8
+            my-24 px-16 py-4
             xs:my-28 xs:px-12
             minism:px-16 minism:py-10
             sm:p-4
@@ -81,8 +82,9 @@ const HomePage = ({ carouselPics }: Props) => {
           stiffness: 200,
           duration: 1.5,
         }}
-        className="relative -mt-8 font-semibold text-center drop-shadow-grey -z-30
-        p-2 text-2xl
+        className="relative -z-30 font-semibold text-center drop-shadow-grey 
+        short:mt-0 short:space-y-3
+        p-2 text-xl -mt-8
         sm:text-3xl sm:-mt-6
         md:-mt-2
         lg:space-y-2 lg:text-4xl"
