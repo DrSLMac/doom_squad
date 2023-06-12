@@ -24,7 +24,7 @@ export default function Home() {
       <Head>
         <title>Doom Squad Basketball</title>
         <meta name="description" content="Doom Squad Basketball" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -33,6 +33,7 @@ const Contact = () => {
 
 
       <div className="text-white flex items-center justify-between 
+          shorter:pt-4
             px-8 pt-8
             xs:px-10
             minism:px-12
@@ -148,7 +149,7 @@ const Contact = () => {
         </form>
       </div>
       <div className='flex justify-center'>
-        <footer className='relative bottom-3'>
+        <footer className='relative bottom-5'>
           <SocialIcons />
         </footer>
       </div>
