@@ -52,7 +52,8 @@ const Contact = () => {
                 md:py-10
                 lg:space-y-12 */}
       <div className="flex flex-col items-center 
-      short:-mt-8 -mt-20 space-y-2"
+      short:-mt-8 short:space-y-2 -mt-48 space-y-7
+      "
       >
         <h4 className="contactText">
           Want to know more? 
