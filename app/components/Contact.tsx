@@ -31,7 +31,6 @@ const Contact = () => {
   return (
     <div className="h-screen flex flex-col justify-between text-center">
 
-
       <div className="text-white flex items-center justify-between 
           shorter:pt-4
             px-8 pt-8

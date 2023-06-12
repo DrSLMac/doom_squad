@@ -46,8 +46,8 @@ const HomePage = ({ carouselPics }: Props) => {
           className="flex items-center rounded-lg drop-shadow-3xl
             short:my-8
             my-24 px-16 py-4
-            xs:my-28 xs:px-12
-            minism:px-16 minism:py-10
+            xs:my-28
+            minism:py-10
             sm:p-4
             md:my-32
             lg:my-28
@@ -57,7 +57,7 @@ const HomePage = ({ carouselPics }: Props) => {
             src={doomLogo}
             alt="Doom Squad Team Logo"
             // width={300}
-            // className="w-[12] h-auto"
+            className="max-w-16"
             priority
           />
         </motion.div>
@@ -85,16 +85,14 @@ const HomePage = ({ carouselPics }: Props) => {
         className="relative -z-30 font-semibold text-center drop-shadow-grey 
         short:mt-0 short:space-y-3
         p-2 text-xl -mt-8
-        sm:text-3xl sm:-mt-6
-        md:-mt-2
-        lg:space-y-2 lg:text-4xl"
+        sm:text-3xl sm:-mt-6"
       >
         <h1>Welcome to the 
           <br className="sm:hidden"></br><span className={rubikWet.className}> Doom Squad!</span>
         </h1>
         <p>We are an elite basketball<span> </span>
-        <br className="lg:hidden"></br>
-           program serving the 
+        <br></br>
+           program serving the
         <br></br>  
           Dallas/Fort Worth metroplex.</p>
       </motion.div>
