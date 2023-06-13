@@ -11,20 +11,31 @@ export default async function About() {
   const about = await getAbout();
   return (
     <div>
-      <div>
+      <div className="text-white flex justify-between px-6 pt-6
+          xxs:px-8
+          xs:px-10
+          minism:px-12
+          sm:px-16
+          md:px-20
+          lg:px-24 lg:pt-8
+          "
+      >
         <BallIcon />
         <SocialIcons />
       </div>
       <h3 className="text-white uppercase text-center text-3xl">{about[0].title}</h3>
-      <div className="space-y-4">
+      <div className="
+        px-3
+        space-y-4
+        ">
         <PortableText value={about[0].about} />
-      I</div>
+      </div>
       <Image 
         src={about[0].image}
         alt={about[0]._id}
         width={300}
         height={300}
-        className="w-auto"
+        className="hidden w-auto"
         priority
       />
     </div>
