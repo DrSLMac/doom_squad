@@ -18,7 +18,7 @@
 } */
 
 body {
-  height: 100vh;
+  height: 100;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
     to bottom,
@@ -28,7 +28,9 @@ body {
     rgb(var(--background-mid-rgb)) 28%,
     rgb(var(--background-mid-rgb)) 70%,
     rgb(var(--background-start-rgb)) 99%
-  );
+    );
+  overflow: scroll;
+  background-color: black;
   background-repeat: no-repeat;
 }
 

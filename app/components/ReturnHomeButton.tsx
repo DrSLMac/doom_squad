@@ -7,7 +7,7 @@ const ReturnHomeButton = () => {
     <div className='py-8 lg:py-4'>
         <button
             id="basic-button"
-            className='pageButtons
+            className='pageButtons 
             h-[4rem] px-7 text-lg
             '>
             <Link href='/'>
