@@ -46,7 +46,7 @@
 
 
 ## Deployed Page
-Visit the published site [here](deployment address goes here)
+Visit the published site [here](https://doom-squad.vercel.app/)
 
 ## Contributors
  Shauna MacFarlane-Okongo
