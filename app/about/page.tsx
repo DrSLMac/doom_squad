@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-// import UnderConstruction from "../components/UnderConstruction";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { getAbout } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
@@ -13,7 +12,7 @@ export default async function About() {
   const about = await getAbout();
   return (
     <div>
-            <div className="text-white flex items-center justify-between 
+      <div className="text-white flex items-center justify-between 
           shorter:pt-4
             px-8 pt-8
             xs:px-10
@@ -65,10 +64,4 @@ export default async function About() {
       </div>
     </div>
   );
-  // return (
-  //   <div className='p-12'>
-  //       <h1 className='text-white'>This is the About Page</h1>
-  //       <UnderConstruction/>
-  //   </div>
-  // )
 }
