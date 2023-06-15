@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BallIcon from "../components/BallIcon";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
 import Footer from "../components/Footer";
 
 export default async function Coaches() {
@@ -16,7 +17,7 @@ export default async function Coaches() {
   return (
     <div>
       <div
-        className="text-white flex items-center justify-between 
+        className="flex items-center justify-between 
           shorter:pt-4
             px-8 pt-8
             xs:px-10
@@ -31,9 +32,13 @@ export default async function Coaches() {
           <HomeIcon className="text-white short:h-8 h-10" />
         </a>
       </div>
-      <h3 className="uppercase text-center mt-4 text-3xl">Coaching Staff</h3>
+      <h3 className="text-white uppercase text-center mt-4 text-3xl">Coaching Staff</h3>
+      <Link href="/about" className="flex text-xs px-4 items-center py-2 justify-center">
+        <ArrowUturnLeftIcon className="text-white h-4 px-2" /> 
+        <p className="text-white">Return to Previous Page</p>
+      </Link>
 
-      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 pb-10">
+      <div className="mt-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 pb-10">
         {sortedCoaches.map((coach) => (
           <Link
             href={`/coaches/${coach.slug}`}
@@ -54,7 +59,7 @@ export default async function Coaches() {
             </div>
           </Link>
         ))}
-      </div>
+      L</div>
       <Footer />
     </div>
   );
