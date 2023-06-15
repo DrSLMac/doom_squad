@@ -102,16 +102,16 @@ const NavBar = () => {
                             Overview of Teams
                         </Link>
                     </MenuItem>
-                    <MenuItem onClick={closeSecond}>
+                    {/* <MenuItem onClick={closeSecond}>
                         <Link href='/doom-squad'>
                             Doom Squad
                         </Link>
-                    </MenuItem>
-                    <MenuItem onClick={closeSecond}>
+                    </MenuItem> */}
+                    {/* <MenuItem onClick={closeSecond}>
                         <Link href='/diva-squad'>
                             Diva Squad
                         </Link>
-                    </MenuItem>
+                    </MenuItem> */}
                 </Menu>
             </div>
 
@@ -136,12 +136,12 @@ const NavBar = () => {
                     }}
                 >
                     <MenuItem onClick={closeThird}>
-                        <Link href='/calendar'>
+                        <Link href='/events'>
                             Calendar
                         </Link>
                     </MenuItem>
                     <MenuItem onClick={closeThird}>
-                        <Link href='/upcoming-events'>
+                        <Link href='/upcoming_events'>
                             Upcoming Events
                         </Link>
                     </MenuItem>
@@ -169,12 +169,12 @@ const NavBar = () => {
                     }}
                 >
                     <MenuItem onClick={closeFourth}>
-                        <Link href='/contact'>
+                        <Link href='/contactus'>
                             Contact us
                         </Link>
                     </MenuItem>
                     <MenuItem onClick={closeFourth}>
-                        <Link href='/get-involved'>
+                        <Link href='/get_involved'>
                             Get Involved
                         </Link>
                     </MenuItem>

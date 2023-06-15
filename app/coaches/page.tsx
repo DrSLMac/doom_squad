@@ -41,8 +41,8 @@ export default async function Coaches() {
             <Image
               src={coach.image}
               alt={coach.name}
-              width={250}
-              height={100}
+              width={150}
+              height={150}
               className="object-cover rounded-lg border border-gray-500"
               priority
             />
