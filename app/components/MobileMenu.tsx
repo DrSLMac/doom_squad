@@ -102,7 +102,7 @@ const MobileMenu = () => {
                     <AccordionDetails>
                         <Grid >
                             <ListItem className='ml-5' key={6}>
-                                <Link href='/calendar'>
+                                <Link href='/events'>
                                     Calendar
                                 </Link>
                             </ListItem>
