@@ -3,18 +3,16 @@ import React from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import PageHeader from '../components/PageHeader'
 import BallIcon from '../components/BallIcon'
 import { HomeIcon } from '@heroicons/react/24/solid'
 
-type Props = {
-  calendarData: string,
-  initialDate: string,
-}
+// type Props = {
+//   calendarData: string,
+//   initialDate: string,
+// }
+// { calendarData, initialDate }: Props
 
-
-const Events = ({ calendarData, initialDate }: Props) => {
-  // const { calendarData, initialDate } = props
+export default function TeamEvents() {
 
   return (
     <div className='h-screen'>
@@ -34,18 +32,18 @@ const Events = ({ calendarData, initialDate }: Props) => {
       </div>
       <h3 className="uppercase text-center mt-4 mb-4 text-3xl">Calendar of Events</h3>
 
-      <div className='h-[70%] p-8'>
+      {/* <div className='h-[70%] p-8'>
         <FullCalendar 
           plugins={[dayGridPlugin, interactionPlugin]}
           headerToolbar={false}
           initialView='dayGridMonth'
           initialDate={initialDate}
           contentHeight='600'
-          // events={calendarData}
+          events={calendarData}
           editable={true}
           height='100%'
         />
-      </div>
+      </div> */}
     </div>
   )
 }
