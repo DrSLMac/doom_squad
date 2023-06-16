@@ -3,10 +3,11 @@ import React from "react";
 import { getCoaches } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-import BallIcon from "../components/BallIcon";
-import { HomeIcon } from "@heroicons/react/24/solid";
-import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
+// import BallIcon from "../components/BallIcon";
+// import { HomeIcon } from "@heroicons/react/24/solid";
+// import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
 import Footer from "../components/Footer";
+import PageHeader from "../components/PageHeader";
 
 export default async function Coaches() {
   const coaches = await getCoaches();
@@ -15,28 +16,8 @@ export default async function Coaches() {
   });
 
   return (
-    <div>
-      <div
-        className="flex items-center justify-between 
-          shorter:pt-4
-            px-8 pt-8
-            xs:px-10
-            minism:px-12
-            sm:px-16
-            md:px-20
-            lg:px-24 lg:pt-8
-      "
-      >
-        <BallIcon />
-        <a href="/">
-          <HomeIcon className="text-white short:h-8 h-10" />
-        </a>
-      </div>
-      <h3 className="text-white uppercase text-center mt-4 text-3xl">Coaching Staff</h3>
-      <Link href="/about" className="flex text-xs px-4 items-center py-2 justify-center">
-        <ArrowUturnLeftIcon className="text-white h-4 px-2" /> 
-        <p className="text-white">Return to Previous Page</p>
-      </Link>
+    <div className="h-full">
+      <PageHeader pageTitle="Coaching Staff" returnPage="/about" />
 
       <div className="mt-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 pb-10">
         {sortedCoaches.map((coach) => (
@@ -59,8 +40,10 @@ export default async function Coaches() {
             </div>
           </Link>
         ))}
-      L</div>
-      <Footer />
+      </div>
+      <div className="relative bottom-0">
+        <Footer />
+      </div>
     </div>
   );
 }

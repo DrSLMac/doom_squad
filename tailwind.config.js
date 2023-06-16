@@ -31,6 +31,7 @@ module.exports = {
       dropShadow: {
         '3xl': '10px 10px 8px #595959',
         'grey': '10px 10px 8px #A6A6A6',
+        'light': '2px 2px 4px rgba(255, 255, 255, 1)',
       },
       spacing: {
         '1/2': '50%',

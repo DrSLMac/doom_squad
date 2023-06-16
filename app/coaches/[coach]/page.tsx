@@ -3,32 +3,47 @@ import React from 'react'
 import { getCoach } from '@/sanity/sanity-utils';
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
+import PageHeader from '@/app/components/PageHeader';
+import Footer from '@/app/components/Footer';
 
 type Props = {
-  params: { coach: string };
+  params: { 
+    coach: string,
+    returnPage: string
+  };
 }
 
 export default async function Coach({ params }: Props) {
 
   const slug = params.coach;
   const coach = await getCoach(slug);
-  // console.log("coach: ", coach)
+  
   return (
-    <div className='max-w-3xl mx-auto py-10'>Each Coach will have their own Bio Page
-      <p>This is <span>{coach.name}&apos;s</span> page</p>
-      <Image 
-        src={coach.image}
-        alt={coach.name}
-        width={250}
-        height={100}
-        className="object-cover rounded-lg border border-gray-500"
-        priority
-      />
-      <p>{coach.title}</p>
+    <div className='h-full'>
+      <PageHeader pageTitle="Meet the Coach" returnPage='/coaches' />
 
-      <div><PortableText value={coach.content}/></div>
+      <div className='flex flex-col items-center py-4'>
+        <Image 
+          src={coach.image}
+          alt={coach.name}
+          width={250}
+          height={100}
+          className="object-cover rounded-lg border border-gray-500"
+          priority
+        />
+        <div className='py-4 text-center'>
+          <h1 className='font-bold text-xl'>{coach.name}</h1>
+          <h2 className='font-semibold text-lg'>{coach.title}</h2>
+        </div>
 
-
+        <div className='space-y-2 px-8 pb-4 drop-shadow-light'>
+          <PortableText value={coach.content}/>
+        </div>
+      </div>
+      
+      <div className='flex place-content-center'>
+        <Footer />
+      </div>
     </div>
   )
 }
