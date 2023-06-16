@@ -50,8 +50,6 @@ const Events = ({ calendarData, initialDate }: Props) => {
   )
 }
 
-export default Events
-
 
 
 // import UnderConstruction from '../components/UnderConstruction'
