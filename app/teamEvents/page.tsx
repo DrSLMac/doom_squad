@@ -6,13 +6,12 @@ import interactionPlugin from '@fullcalendar/interaction'
 import BallIcon from '../components/BallIcon'
 import { HomeIcon } from '@heroicons/react/24/solid'
 
-// type Props = {
-//   calendarData: string,
-//   initialDate: string,
-// }
-// { calendarData, initialDate }: Props
+type Props = {
+  calendarData: string,
+  initialDate: string,
+}
 
-export default function TeamEvents() {
+export default function TeamEvents({ calendarData, initialDate }: Props ) {
 
   return (
     <div className='h-screen'>
@@ -32,7 +31,7 @@ export default function TeamEvents() {
       </div>
       <h3 className="uppercase text-center mt-4 mb-4 text-3xl">Calendar of Events</h3>
 
-      {/* <div className='h-[70%] p-8'>
+      <div className='h-[70%] p-8'>
         <FullCalendar 
           plugins={[dayGridPlugin, interactionPlugin]}
           headerToolbar={false}
@@ -43,7 +42,7 @@ export default function TeamEvents() {
           editable={true}
           height='100%'
         />
-      </div> */}
+      </div>
     </div>
   )
 }
