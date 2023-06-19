@@ -4,6 +4,7 @@ import React from 'react'
 import BallIcon from '../components/BallIcon'
 import { HomeIcon } from '@heroicons/react/24/solid'
 import UnderConstruction from '../components/UnderConstruction'
+import Calendar from '../components/Calendar'
 
 
 export default function Events() {
@@ -26,7 +27,8 @@ export default function Events() {
       </div>
       <h3 className="uppercase text-center mt-4 mb-4 text-3xl">Calendar of Events</h3>
 
-      <UnderConstruction />
+      <Calendar />
+      {/* <UnderConstruction /> */}
 
     </div>
   );
