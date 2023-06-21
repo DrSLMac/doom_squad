@@ -9,4 +9,7 @@ export type Coach = {
   title: string,
   image: string,
   content: PortableTextBlock[]
+  facebook: string,
+  twitter: string,
+  instagram: string,
 };

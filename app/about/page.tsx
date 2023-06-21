@@ -59,7 +59,11 @@ export default async function About() {
       </div>
       <div className='flex justify-center py-4'>
         <footer className='relative bottom-5'>
-          <SocialIcons />
+          <SocialIcons 
+            facebook="https://www.facebook.com/texasdivasbasketball"
+            twitter="https://twitter.com/texasdivasbasketball"
+            instagram="https://www.instagram.com/texasdivasbasketball/"
+          />
         </footer>
       </div>
     </div>

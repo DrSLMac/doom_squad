@@ -43,6 +43,21 @@ const coach = {
             type: 'array',
             of: [{ type: 'block' }]
         },
+        {
+            name: 'twitter',
+            title: 'Twitter',
+            type: 'url',
+        },
+        {
+            name: 'facebook',
+            title: 'Facebook',
+            type: 'url',
+        },
+        {
+            name: 'instagram',
+            title: 'Instagram',
+            type: 'url',
+        }
     ]
 };
 

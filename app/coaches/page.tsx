@@ -6,7 +6,8 @@ import Link from "next/link";
 // import BallIcon from "../components/BallIcon";
 // import { HomeIcon } from "@heroicons/react/24/solid";
 // import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
+import SocialIcons from "../components/SocialIcons";
 import PageHeader from "../components/PageHeader";
 
 export default async function Coaches() {
@@ -19,7 +20,7 @@ export default async function Coaches() {
     <div className="h-full">
       <PageHeader pageTitle="Coaching Staff" returnPage="/about" />
 
-      <div className="mt-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 pb-10">
+      <div className="mt-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-10">
         {sortedCoaches.map((coach) => (
           <Link
             href={`/coaches/${coach.slug}`}
@@ -41,9 +42,18 @@ export default async function Coaches() {
           </Link>
         ))}
       </div>
-      <div className="relative bottom-0">
-        <Footer />
+      <div className="flex justify-center">
+        <footer className='bottom-5'>
+            <SocialIcons 
+              facebook="https://www.facebook.com/texasdivasbasketball"
+              twitter="https://twitter.com/texasdivasbasketball"
+              instagram="https://www.instagram.com/texasdivasbasketball/"
+            />
+        </footer>
       </div>
     </div>
   );
 }
+// "https://www.facebook.com/texasdivasbasketball"
+// "https://twitter.com/LSUwbkb"
+// "https://www.instagram.com/divasbasketball/?fbclid=IwAR0Yq9rhf63FQOW9AxEwOpqaCT1xJAvjAs-5lUKox_r8WjTCQNqnyDkL2OU"

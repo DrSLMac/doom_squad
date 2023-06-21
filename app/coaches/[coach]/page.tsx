@@ -4,7 +4,7 @@ import { getCoach } from '@/sanity/sanity-utils';
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import PageHeader from '@/app/components/PageHeader';
-import Footer from '@/app/components/Footer';
+import SocialIcons from '@/app/components/SocialIcons';
 
 type Props = {
   params: { 
@@ -19,7 +19,7 @@ export default async function Coach({ params }: Props) {
   const coach = await getCoach(slug);
   
   return (
-    <div className='h-full'>
+    <div className='h-screen'>
       <PageHeader pageTitle="Meet the Coach" returnPage='/coaches' />
 
       <div className='flex flex-col items-center py-4'>
@@ -36,13 +36,21 @@ export default async function Coach({ params }: Props) {
           <h2 className='font-semibold text-lg'>{coach.title}</h2>
         </div>
 
-        <div className='space-y-2 px-8 pb-4 drop-shadow-light'>
+        <div className='space-y-2 px-8 pb-4
+          bg-gradient-to-b from-black from-40% via-neon via-60% to-white bg-clip-text text-transparent
+        '>
           <PortableText value={coach.content}/>
         </div>
       </div>
       
       <div className='flex place-content-center'>
-        <Footer />
+      <footer className='bottom-5'>
+            <SocialIcons 
+              facebook={coach.facebook}
+              twitter={coach.twitter}
+              instagram={coach.instagram}
+            />
+        </footer>
       </div>
     </div>
   )

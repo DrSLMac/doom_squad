@@ -1,14 +1,14 @@
-import React from 'react'
-import SocialIcons from './SocialIcons'
+// import React from 'react'
+// import SocialIcons from './SocialIcons'
 
-const Footer = () => {
-  return (
-    // <div className='flex justify-center py-4'>
-        <footer className='bottom-5'>
-            <SocialIcons />
-        </footer>
-    // </div>
-  )
-}
+// const Footer = () => {
+//   return (
+//     // <div className='flex justify-center py-4'>
+//         // <footer className='bottom-5'>
+//         //     <SocialIcons />
+//         // </footer>
+//     // </div>
+//   )
+// }
 
-export default Footer
+// export default Footer
