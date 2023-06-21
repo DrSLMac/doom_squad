@@ -22,7 +22,7 @@ const Header = () => {
             "
       >
         <BallIcon />
-        <SocialIcons />
+        <SocialIcons facebook="" twitter="" instagram=""/>
       </div>
 
       <MobileMenu />

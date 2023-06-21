@@ -3,12 +3,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { IconButton } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 type Props = {
   facebook: string,
   twitter: string,
   instagram: string,
+  icon: string
 };
 const SocialIcons = ({facebook, twitter, instagram}: Props) => {
   return (
@@ -23,14 +28,22 @@ const SocialIcons = ({facebook, twitter, instagram}: Props) => {
       className="relative -z-10 flex items-center"
     >
       <IconButton href={facebook}>
-        <FacebookOutlinedIcon color="white"/>
+        <FacebookIcon sx={{ stroke: 'white', strokeWidth: 1 ,  color: "transparent", fontSize: 36 }} />
+      </IconButton>
+
+      {/* <FontAwesomeIcon icon={icon({name: 'twitter', style: 'brands'})} /> */}
+
+      <FontAwesomeIcon  icon={icon({name: 'facebook', style: 'brands'})}/>
+
+      <IconButton href={facebook}>
+        <InstagramIcon sx={{ color: "white", fontSize: 36 }} />
       </IconButton>
       
-      <SocialIcon
+      {/* <SocialIcon
         url={instagram}
         fgColor="white"
         bgColor="transparent"
-      />
+      /> */}
       <SocialIcon
         url={twitter}
         fgColor="white"
