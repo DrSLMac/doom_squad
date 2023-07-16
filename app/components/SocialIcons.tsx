@@ -6,8 +6,8 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { IconButton } from '@mui/material';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 type Props = {
   facebook: string,
@@ -33,7 +33,7 @@ const SocialIcons = ({facebook, twitter, instagram}: Props) => {
 
       {/* <FontAwesomeIcon icon={icon({name: 'twitter', style: 'brands'})} /> */}
 
-      <FontAwesomeIcon  icon={icon({name: 'facebook', style: 'brands'})}/>
+      {/* <FontAwesomeIcon  icon={icon({name: 'facebook', style: 'brands'})}/> */}
 
       <IconButton href={facebook}>
         <InstagramIcon sx={{ color: "white", fontSize: 36 }} />
